@@ -4,7 +4,7 @@ namespace diziler
 {
     class Program
     {
-        static async void Main(string[] args)
+        static void Main(string[] args)
         {
            //Dizi Tanımlama
            string[] renkler = new string[5];
@@ -29,9 +29,9 @@ namespace diziler
            int diziuzunlugu = int.Parse(Console.ReadLine());
            int[] sayıDizisi = new int[diziuzunlugu];
 
-           for (int i = 0; i < diziuzunlugu; i++)
-           {
-               Console.Write("lütfen {0}. sayıyı giriniz", i+1 );
+           for (int i = 0; i < diziuzunlugu; i++)   //i küçk olacak küçk eşit değilçünkü 5 elemanlı dizi için max indeximiz 4 olmalıdır 
+           {                                                                                                             //(0,1,2,3,4)
+               Console.Write("lütfen {0}. sayıyı giriniz: ", i+1 ); //i+1 içeriyi 1 den başlatıyor {0} bu kısmı
                sayıDizisi[i] = int.Parse(Console.ReadLine());
 
            }
@@ -42,12 +42,6 @@ namespace diziler
 
             Console.WriteLine("ortalama: " + toplam/diziuzunlugu);
            
-               
-    
-
-
-
-           
-        }
+         }
     }
 }
