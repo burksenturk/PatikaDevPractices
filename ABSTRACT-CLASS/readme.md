@@ -1,0 +1,1 @@
+## arayüzler örneğine göre yapılmıştır
