@@ -37,3 +37,6 @@ namespace csharp_enum
         CokSıcak=30
     }
 }
+
+//"enum" anahtar kelimesi enumeration yani numaralandırma kelimesinden gelir. Sayısal verilerı string ifadelerle saklamanızı sağlar. Okunabilirliğe katkısı da tam olarak burdan gelir diyebiliriz.
+//Enum lar default olarak 0 dan başlar.

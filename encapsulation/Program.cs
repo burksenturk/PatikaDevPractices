@@ -6,7 +6,7 @@ namespace encapsulation
     {
         static void Main(string[] args)
         {
-          Ogrenci ogrenci = new Ogrenci();
+          Ogrenci ogrenci = new Ogrenci();          
           ogrenci.Isim="burak";
           ogrenci.Soyisim="şentürk";
           ogrenci.OgrenciNo=940;
@@ -54,7 +54,7 @@ namespace encapsulation
 
         public Ogrenci(string ısim, string soyisim, int ogrenciNo, int sinif) //kurucu metodumuz
         {
-            Isim = ısim;
+            Isim = ısim;    //ctrl+.
             Soyisim = soyisim;
             OgrenciNo = ogrenciNo;
             Sinif = sinif;
@@ -82,3 +82,20 @@ namespace encapsulation
         }
     }
 }
+
+// class Ogrenci
+// {
+//     private string name; =>//field
+
+//     public string Name =>//property
+//     {
+//         get { return name; }
+//         set { name = value; }
+//     }
+// }
+
+
+// Bilindiği gibi C# nesneye dayalı bir programlama dilidir. Kapsülleme (Encapsulation) kavramı bir nesnenin bazı özellik ve işlevlerini başka sınıflardan ve nesnelerden saklamaktır. Private erişim belirteci sayesinde bu şekilde tanımlanan bir field’ i başka sınıflardan gizlemiş oluruz. Ayrıca bu field başka sınıflarda kullanılamaz.
+
+
+// Kapsülleme (Encapsulation) sayesinde nesneler bilinçsiz kullanımdan korunmuş olur. Fakat bazı durumlarda private field’ lara erişmemiz ve özelliklerini kullanmamız gerekebilir. Bu durumda Property kavramı devreye girer. Property bir field’ in değerini geri döndürmeye (Get) ve değerini ayarlamaya (Set) olanak sağlar
